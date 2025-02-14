@@ -1,7 +1,7 @@
 import { DragDropContext, type DropResult } from "react-beautiful-dnd"
 import Board from "./components/Board"
 import AddTask from "./components/AddTask"
-import { useTaskStore } from "./context/store"
+import { useTaskStore } from "./store/taskStore"
 
 export default function TaskManager() {
   const { moveTask } = useTaskStore()

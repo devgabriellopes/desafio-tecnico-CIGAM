@@ -1,5 +1,5 @@
 import { DragDropContext } from "react-beautiful-dnd";
-import { useTaskStore } from "../context/store";
+import { useTaskStore } from "../store/taskStore";
 import Column from "./Column";
 import { DropResult } from "react-beautiful-dnd";
 
