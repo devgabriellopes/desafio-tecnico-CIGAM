@@ -1,7 +1,7 @@
 import type React from "react"
 import { useState, useEffect } from "react"
-import { useTaskStore } from "../store"
-import type { Task } from "../types"
+import { useTaskStore } from "../context/store"
+import type { Task } from "../context/types"
 import { Button } from "@/components/ui/button"
 import {
   Dialog,

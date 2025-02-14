@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Draggable } from "react-beautiful-dnd";
-import type { Task } from "../types";
+import type { Task } from "../context/types";
 import TaskModal from "./TaskModal";
-import { useTaskStore } from "@/store";
+import { useTaskStore } from "../context/store";
 import { Trash } from "lucide-react";
 
 interface TaskItemProps {

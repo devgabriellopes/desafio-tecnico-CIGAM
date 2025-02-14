@@ -1,5 +1,5 @@
 import { Droppable } from "react-beautiful-dnd";
-import type { Task } from "../types";
+import type { Task } from "../context/types";
 import TaskItem from "./TaskItem";
 
 interface ColumnProps {
