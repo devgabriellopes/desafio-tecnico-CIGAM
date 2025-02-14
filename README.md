@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# Desafio Técnico CIGAM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologias Utilizadas
 
-Currently, two official plugins are available:
+- **Zustand**: Uma biblioteca leve e direta para gerenciar estado no React. Escolhi ela porque é simples, eficiente e não complica o código.
+- **Tailwind CSS**: Um framework de CSS que facilita a estilização com classes utilitárias. Optei por ele porque é flexível, rápido de usar e ajuda a manter a consistência visual.
+- **Radix UI**: Uma coleção de componentes prontos, focados em acessibilidade e simplicidade. Decidi usar porque se integra bem com o Tailwind e facilita a criação de interfaces acessíveis.
+- **React Beautiful DnD**:  Uma biblioteca para implementar funcionalidades de arrastar e soltar no React. Escolhi ela porque é fácil de usar e funciona muito bem com o ecossistema React.
+- **Vite**: Uma ferramenta de build super rápida para projetos modernos. Fui de Vite porque ele acelera o desenvolvimento e torna a experiência muito mais fluida.
+- **TypeScript**: Uma extensão do JavaScript que adiciona tipagem estática. Adotei TypeScript porque ajuda a evitar erros, melhora a qualidade do código e facilita a manutenção a longo prazo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como Rodar o Projeto Localmente
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. **Clone o repositório:**
+```sh
+git clone https://github.com/devgabriellopes/desafio-tecnico-CIGAM.git
+cd desafio-tecnico-CIGAM
+```
+   
+2. **Instale as dependências:**
+```sh
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. **Inicie o servidor de desenvolvimento:**
+```sh
+npm run dev
+```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. **Abra o navegador e acesse:**
+```sh
+http://localhost:5173/
+```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+**Versão do Node**
+```sh
+v22.12.0
 ```
